@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="fondo_crema">#FFF8EB</color>
+
+    <!-- Letras del título -->
+    <color name="titulo_amarillo">#FFC33B</color>
+    <color name="titulo_rosa">#F58BAE</color>
+    <color name="titulo_azul">#4EA8E6</color>
+    <color name="titulo_naranja">#E07B39</color>
+
+    <!-- Círculos de estaciones -->
+    <color name="estacion_primavera">#F48FB1</color>
+    <color name="estacion_verano">#FFC107</color>
+    <color name="estacion_otono">#E07B39</color>
+    <color name="estacion_invierno">#4DA3E0</color>
+
+    <!-- Botones -->
+    <color name="verde_boton">#4CAF50</color>
+    <color name="verde_sombra">#388E3C</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="sombra_blanco">#E3DCCB</color>
+    <color name="texto_oscuro">#1E2A3A</color>
 </resources>
