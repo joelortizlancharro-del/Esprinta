@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_otono"
+    android:orientation="vertical">
+
+    <include layout="@layout/cabecera" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!-- Simbolo de la estacion -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgSimbolo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/bg_circulo"
+                android:backgroundTint="@color/estacion_otono"
+                android:importantForAccessibility="no"
+                android:padding="32dp"
+                android:src="@drawable/ic_otono" />
+
+            <TextView
+                android:id="@+id/btnFet"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bg_boton_verde"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp"
+                android:paddingBottom="5dp"
+                android:text="@string/fet"
+                android:textColor="@color/blanco"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Paisajes para elegir -->
+        <GridLayout
+            android:id="@+id/gridPaisajes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:columnCount="2">
+
+            <LinearLayout
+                android:id="@+id/tarjetaPlaya"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_tarjeta"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/bg_foto"
+                    android:importantForAccessibility="no"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/foto_playa" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/obj_playa"
+                    android:textColor="@color/texto_oscuro"
+                    android:textSize="@dimen/texto_tarjeta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tarjetaJardin"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_tarjeta"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/bg_foto"
+                    android:importantForAccessibility="no"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/foto_jardin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/obj_jardin"
+                    android:textColor="@color/texto_oscuro"
+                    android:textSize="@dimen/texto_tarjeta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tarjetaBosque"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_tarjeta"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/bg_foto"
+                    android:importantForAccessibility="no"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/foto_bosque" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/obj_bosque"
+                    android:textColor="@color/texto_oscuro"
+                    android:textSize="@dimen/texto_tarjeta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tarjetaMontana"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_tarjeta"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/bg_foto"
+                    android:importantForAccessibility="no"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/foto_montana" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/obj_montana"
+                    android:textColor="@color/texto_oscuro"
+                    android:textSize="@dimen/texto_tarjeta" />
+            </LinearLayout>
+        </GridLayout>
+    </LinearLayout>
+</LinearLayout>

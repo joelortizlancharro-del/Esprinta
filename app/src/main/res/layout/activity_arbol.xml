@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_otono"
+    android:orientation="vertical">
+
+    <include layout="@layout/cabecera" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- Arbol y encima lo que se pone -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="230dp"
+                    android:layout_height="257dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/arbol" />
+
+                <LinearLayout
+                    android:id="@+id/decoracionArbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:orientation="horizontal" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/btnFet"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_boton_verde"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp"
+                android:paddingBottom="5dp"
+                android:text="@string/fet"
+                android:textColor="@color/blanco"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Cosas para decorar -->
+        <GridLayout
+            android:id="@+id/gridArbol"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:columnCount="2">
+
+            <LinearLayout
+                android:id="@+id/tarjetaFlores"
+                android:layout_width="@dimen/tarjeta_ancho"
+                android:layout_height="@dimen/tarjeta_alto"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_tarjeta"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tarjeta_foto"
+                    android:background="@drawable/bg_foto"
+                    android:importantForAccessibility="no"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/foto_flores" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/obj_flores"
+                    android:textColor="@color/texto_oscuro"
+                    android:textSize="@dimen/texto_tarjeta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tarjetaHojasVerdes"
+                android:layout_width="@dimen/tarjeta_ancho"
+                android:layout_height="@dimen/tarjeta_alto"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_tarjeta"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tarjeta_foto"
+                    android:background="@drawable/bg_foto"
+                    android:importantForAccessibility="no"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/foto_hojas_verdes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/obj_hojas_verdes"
+                    android:textColor="@color/texto_oscuro"
+                    android:textSize="@dimen/texto_tarjeta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tarjetaHojasMarrones"
+                android:layout_width="@dimen/tarjeta_ancho"
+                android:layout_height="@dimen/tarjeta_alto"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_tarjeta"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tarjeta_foto"
+                    android:background="@drawable/bg_foto"
+                    android:importantForAccessibility="no"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/foto_hojas_marrones" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/obj_hojas_marrones"
+                    android:textColor="@color/texto_oscuro"
+                    android:textSize="@dimen/texto_tarjeta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tarjetaNieve"
+                android:layout_width="@dimen/tarjeta_ancho"
+                android:layout_height="@dimen/tarjeta_alto"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_tarjeta"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tarjeta_foto"
+                    android:background="@drawable/bg_foto"
+                    android:importantForAccessibility="no"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/foto_nieve" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/obj_nieve"
+                    android:textColor="@color/texto_oscuro"
+                    android:textSize="@dimen/texto_tarjeta" />
+            </LinearLayout>
+        </GridLayout>
+    </LinearLayout>
+</LinearLayout>

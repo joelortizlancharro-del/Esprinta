@@ -20,4 +20,17 @@
     <color name="blanco">#FFFFFF</color>
     <color name="sombra_blanco">#E3DCCB</color>
     <color name="texto_oscuro">#1E2A3A</color>
+
+    <!-- Fondos de cada estacion -->
+    <color name="fondo_primavera">#FDEFF4</color>
+    <color name="fondo_verano">#FFF8E1</color>
+    <color name="fondo_otono">#FBEDE4</color>
+    <color name="fondo_invierno">#EAF4FB</color>
+    <color name="fondo_profe">#EEF1F6</color>
+
+    <!-- Otros -->
+    <color name="rojo_error">#D9534F</color>
+    <color name="rojo_sombra">#A94442</color>
+    <color name="gris_foto">#E9E5DC</color>
+    <color name="gris_texto">#8C8577</color>
 </resources>

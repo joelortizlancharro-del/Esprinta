@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cabecera de las pantallas: el color y la estacion se cambian desde el codigo -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cabecera"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cabecera_alto"
+    android:background="@color/estacion_otono"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/margen_pantalla"
+    android:paddingEnd="@dimen/margen_pantalla">
+
+    <ImageView
+        android:id="@+id/btnInicio"
+        android:layout_width="@dimen/boton_cabecera"
+        android:layout_height="@dimen/boton_cabecera"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_boton_blanco"
+        android:contentDescription="@string/cd_inicio"
+        android:padding="11dp"
+        android:src="@drawable/ic_casa" />
+
+    <ImageView
+        android:id="@+id/btnAtras"
+        android:layout_width="@dimen/boton_cabecera"
+        android:layout_height="@dimen/boton_cabecera"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_boton_blanco"
+        android:contentDescription="@string/cd_atras"
+        android:padding="11dp"
+        android:src="@drawable/ic_atras" />
+
+    <!-- Estacion en la que estamos -->
+    <LinearLayout
+        android:id="@+id/pastillaEstacion"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_pastilla"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="6dp"
+        android:paddingEnd="14dp">
+
+        <ImageView
+            android:id="@+id/imgEstacion"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/bg_circulo"
+            android:backgroundTint="@color/estacion_otono"
+            android:importantForAccessibility="no"
+            android:padding="7dp"
+            android:src="@drawable/ic_otono" />
+
+        <TextView
+            android:id="@+id/txtEstacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/tardor"
+            android:textColor="@color/texto_oscuro"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:textColor="@color/texto_oscuro"
+        android:textSize="@dimen/texto_titulo"
+        tools:text="@string/que_vols_fer" />
+
+    <ImageView
+        android:id="@+id/btnEscuchar"
+        android:layout_width="@dimen/boton_cabecera"
+        android:layout_height="@dimen/boton_cabecera"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_boton_blanco"
+        android:contentDescription="@string/cd_escuchar"
+        android:padding="11dp"
+        android:src="@drawable/ic_altavoz" />
+
+    <ImageView
+        android:id="@+id/btnMusica"
+        android:layout_width="@dimen/boton_cabecera"
+        android:layout_height="@dimen/boton_cabecera"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_boton_blanco"
+        android:contentDescription="@string/cd_musica"
+        android:padding="11dp"
+        android:src="@drawable/ic_musica" />
+
+    <!-- Boton ayuda igual que el de la pantalla principal -->
+    <TextView
+        android:id="@+id/btnAyuda"
+        android:layout_width="@dimen/boton_cabecera"
+        android:layout_height="@dimen/boton_cabecera"
+        android:background="@drawable/bg_boton_blanco"
+        android:contentDescription="@string/cd_ayuda"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:text="@string/ayuda"
+        android:textColor="@color/texto_oscuro"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</LinearLayout>

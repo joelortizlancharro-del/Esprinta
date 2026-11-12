@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_profe">
+
+    <ImageView
+        android:id="@+id/btnInicio"
+        android:layout_width="@dimen/boton_cabecera"
+        android:layout_height="@dimen/boton_cabecera"
+        android:layout_marginStart="@dimen/margen_pantalla"
+        android:layout_marginTop="@dimen/margen_pantalla"
+        android:background="@drawable/bg_boton_blanco"
+        android:contentDescription="@string/cd_inicio"
+        android:padding="11dp"
+        android:src="@drawable/ic_casa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Hay que hacer una suma para que los nens no entren -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_estacion"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_lock" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/zona_profe"
+            android:textColor="@color/texto_oscuro"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/pregunta_acceso"
+            android:textColor="@color/texto_oscuro"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn4"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_boton_blanco"
+                android:backgroundTint="@color/fondo_profe"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:text="4"
+                android:textColor="@color/texto_oscuro"
+                android:textSize="30sp" />
+            <TextView
+                android:id="@+id/btn5"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_boton_blanco"
+                android:backgroundTint="@color/fondo_profe"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:text="5"
+                android:textColor="@color/texto_oscuro"
+                android:textSize="30sp" />
+            <TextView
+                android:id="@+id/btn6"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_boton_blanco"
+                android:backgroundTint="@color/fondo_profe"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:text="6"
+                android:textColor="@color/texto_oscuro"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

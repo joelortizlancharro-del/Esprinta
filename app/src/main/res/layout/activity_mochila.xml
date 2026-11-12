@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_otono"
+    android:orientation="vertical">
+
+    <include layout="@layout/cabecera" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- Mochila y dentro lo que se mete -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="204dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/mochila" />
+
+                <GridLayout
+                    android:id="@+id/dentroMochila"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="66dp"
+                    android:columnCount="2" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/btnFet"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_boton_verde"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp"
+                android:paddingBottom="5dp"
+                android:text="@string/fet"
+                android:textColor="@color/blanco"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Objetos para elegir -->
+        <GridLayout
+            android:id="@+id/gridMochila"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:columnCount="3">
+
+            <LinearLayout
+                android:id="@+id/tarjetaParaguas"
+                android:layout_width="110dp"
+                android:layout_height="124dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_tarjeta"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:background="@drawable/bg_foto"
+                    android:importantForAccessibility="no"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/foto_paraguas" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/obj_paraguas"
+                    android:textColor="@color/texto_oscuro"
+                    android:textSize="@dimen/texto_tarjeta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tarjetaImpermeable"
+                android:layout_width="110dp"
+                android:layout_height="124dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_tarjeta"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:background="@drawable/bg_foto"
+                    android:importantForAccessibility="no"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/foto_impermeable" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/obj_impermeable"
+                    android:textColor="@color/texto_oscuro"
+                    android:textSize="@dimen/texto_tarjeta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tarjetaGafas"
+                android:layout_width="110dp"
+                android:layout_height="124dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_tarjeta"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:background="@drawable/bg_foto"
+                    android:importantForAccessibility="no"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/foto_gafas" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/obj_gafas"
+                    android:textColor="@color/texto_oscuro"
+                    android:textSize="@dimen/texto_tarjeta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tarjetaCrema"
+                android:layout_width="110dp"
+                android:layout_height="124dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_tarjeta"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:background="@drawable/bg_foto"
+                    android:importantForAccessibility="no"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/foto_crema" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/obj_crema"
+                    android:textColor="@color/texto_oscuro"
+                    android:textSize="@dimen/texto_tarjeta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tarjetaGorra"
+                android:layout_width="110dp"
+                android:layout_height="124dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_tarjeta"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:background="@drawable/bg_foto"
+                    android:importantForAccessibility="no"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/foto_gorra" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/obj_gorra"
+                    android:textColor="@color/texto_oscuro"
+                    android:textSize="@dimen/texto_tarjeta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tarjetaBotas"
+                android:layout_width="110dp"
+                android:layout_height="124dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_tarjeta"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:background="@drawable/bg_foto"
+                    android:importantForAccessibility="no"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/foto_botas" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/obj_botas"
+                    android:textColor="@color/texto_oscuro"
+                    android:textSize="@dimen/texto_tarjeta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tarjetaGuantes"
+                android:layout_width="110dp"
+                android:layout_height="124dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_tarjeta"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:background="@drawable/bg_foto"
+                    android:importantForAccessibility="no"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/foto_guantes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/obj_guantes"
+                    android:textColor="@color/texto_oscuro"
+                    android:textSize="@dimen/texto_tarjeta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tarjetaBufanda"
+                android:layout_width="110dp"
+                android:layout_height="124dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_tarjeta"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:background="@drawable/bg_foto"
+                    android:importantForAccessibility="no"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/foto_bufanda" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/obj_bufanda"
+                    android:textColor="@color/texto_oscuro"
+                    android:textSize="@dimen/texto_tarjeta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tarjetaGorro"
+                android:layout_width="110dp"
+                android:layout_height="124dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_tarjeta"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:background="@drawable/bg_foto"
+                    android:importantForAccessibility="no"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/foto_gorro" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/obj_gorro"
+                    android:textColor="@color/texto_oscuro"
+                    android:textSize="@dimen/texto_tarjeta" />
+            </LinearLayout>
+        </GridLayout>
+    </LinearLayout>
+</LinearLayout>

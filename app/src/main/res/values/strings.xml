@@ -18,4 +18,73 @@
     <string name="cd_verano">Estiu</string>
     <string name="cd_otono">Tardor</string>
     <string name="cd_invierno">Hivern</string>
+
+    <!-- cabecera -->
+    <string name="cd_inicio">Inici</string>
+    <string name="cd_atras">Enrere</string>
+    <string name="cd_escuchar">Escoltar</string>
+    <string name="cd_musica">Música</string>
+
+    <!-- estaciones y menu -->
+    <string name="tria_estacio">TRIA UNA ESTACIÓ</string>
+    <string name="primavera">PRIMAVERA</string>
+    <string name="estiu">ESTIU</string>
+    <string name="tardor">TARDOR</string>
+    <string name="hivern">HIVERN</string>
+    <string name="que_vols_fer">QUÈ VOLS FER?</string>
+    <string name="relaciona">RELACIONA</string>
+    <string name="vesteix">VESTEIX</string>
+    <string name="cancons_dibuix">CANÇONS I DIBUIX</string>
+    <string name="arbre">L\'ARBRE</string>
+    <string name="motxilla">MOTXILLA</string>
+
+    <!-- juegos -->
+    <string name="on_es">ON ÉS %1$s?</string>
+    <string name="vesteix_cos">VESTEIX EL COS</string>
+    <string name="escolta_dibuixa">ESCOLTA I DIBUIXA</string>
+    <string name="decora_arbre">DECORA L\'ARBRE</string>
+    <string name="que_portes">QUÈ PORTES A LA MOTXILLA?</string>
+    <string name="instrucciones_vestir">TOCA EL COS PER POSAR LA ROBA.\n\nTOCA UN ALTRE COP PER CANVIAR-LA O TREURE-LA.</string>
+    <string name="nena">NENA</string>
+    <string name="nen">NEN</string>
+    <string name="desar">DESAR</string>
+    <string name="fet">FET!</string>
+    <string name="dibuixa_aqui">DIBUIXA AQUÍ</string>
+    <string name="cancons">CANÇONS</string>
+    <string name="torna_a_provar">TORNA-HO A PROVAR</string>
+
+    <!-- objetos -->
+    <string name="obj_impermeable">IMPERMEABLE</string>
+    <string name="obj_abrigo">ABRIC</string>
+    <string name="obj_bufanda">BUFANDA</string>
+    <string name="obj_guantes">GUANTS</string>
+    <string name="obj_gorro">GORRO DE LLANA</string>
+    <string name="obj_gorra">GORRA</string>
+    <string name="obj_sandalias">SANDÀLIES</string>
+    <string name="obj_botas">BOTES D\'AIGUA</string>
+    <string name="obj_gafas">ULLERES DE SOL</string>
+    <string name="obj_crema">CREMA SOLAR</string>
+    <string name="obj_paraguas">PARAIGUA</string>
+    <string name="obj_flores">FLORS</string>
+    <string name="obj_hojas_verdes">FULLES VERDES</string>
+    <string name="obj_hojas_marrones">FULLES MARRONS</string>
+    <string name="obj_nieve">NEU</string>
+    <string name="obj_playa">PLATJA</string>
+    <string name="obj_jardin">JARDÍ</string>
+    <string name="obj_bosque">BOSC</string>
+    <string name="obj_montana">MUNTANYA</string>
+
+    <!-- final -->
+    <string name="molt_be">MOLT BÉ!</string>
+    <string name="inici">INICI</string>
+    <string name="altra_estacio">UNA ALTRA ESTACIÓ</string>
+
+    <!-- profesorado -->
+    <string name="zona_profe">ZONA DEL PROFESSORAT</string>
+    <string name="pregunta_acceso">PER ENTRAR, RESOL: 3 + 2 = ?</string>
+    <string name="panell">PANELL DEL PROFESSORAT</string>
+    <string name="estacions_actives">ESTACIONS ACTIVES</string>
+    <string name="activitats">ACTIVITATS</string>
+    <string name="dibuixos_desats">DIBUIXOS DESATS</string>
+    <string name="volum">VOLUM</string>
 </resources>

@@ -6,4 +6,11 @@
     <dimen name="boton_jugar_ancho">220dp</dimen>
     <dimen name="boton_jugar_alto">68dp</dimen>
     <dimen name="margen_pantalla">16dp</dimen>
+    <dimen name="cabecera_alto">72dp</dimen>
+    <dimen name="boton_cabecera">48dp</dimen>
+    <dimen name="tarjeta_ancho">120dp</dimen>
+    <dimen name="tarjeta_alto">132dp</dimen>
+    <dimen name="tarjeta_foto">84dp</dimen>
+    <dimen name="texto_titulo">22sp</dimen>
+    <dimen name="texto_tarjeta">12sp</dimen>
 </resources>

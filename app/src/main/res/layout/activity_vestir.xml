@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_otono"
+    android:orientation="vertical">
+
+    <include layout="@layout/cabecera" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Que hay que hacer -->
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/bg_tarjeta"
+            android:fontFamily="sans-serif-medium"
+            android:padding="18dp"
+            android:text="@string/instrucciones_vestir"
+            android:textColor="@color/texto_oscuro"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <!-- Cuerpo y encima las zonas donde va la ropa -->
+            <FrameLayout
+                android:layout_width="210dp"
+                android:layout_height="370dp">
+
+                <ImageView
+                    android:id="@+id/imgCuerpo"
+                    android:layout_width="200dp"
+                    android:layout_height="347dp"
+                    android:layout_marginTop="16dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/cuerpo_nino" />
+
+                <ImageView
+                    android:id="@+id/zonaTronco"
+                    android:layout_width="96dp"
+                    android:layout_height="111dp"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginTop="116dp"
+                    android:background="@drawable/bg_zona_vacia"
+                    android:importantForAccessibility="no"
+                    android:padding="2dp"
+                    android:scaleType="centerCrop" />
+                <ImageView
+                    android:id="@+id/zonaCabeza"
+                    android:layout_width="81dp"
+                    android:layout_height="53dp"
+                    android:layout_marginStart="59dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/bg_zona_vacia"
+                    android:importantForAccessibility="no"
+                    android:padding="2dp"
+                    android:scaleType="centerCrop" />
+                <ImageView
+                    android:id="@+id/zonaOjos"
+                    android:layout_width="74dp"
+                    android:layout_height="29dp"
+                    android:layout_marginStart="63dp"
+                    android:layout_marginTop="56dp"
+                    android:background="@drawable/bg_zona_vacia"
+                    android:importantForAccessibility="no"
+                    android:padding="2dp"
+                    android:scaleType="centerCrop" />
+                <ImageView
+                    android:id="@+id/zonaCuello"
+                    android:layout_width="74dp"
+                    android:layout_height="37dp"
+                    android:layout_marginStart="63dp"
+                    android:layout_marginTop="99dp"
+                    android:background="@drawable/bg_zona_vacia"
+                    android:importantForAccessibility="no"
+                    android:padding="2dp"
+                    android:scaleType="centerCrop" />
+                <ImageView
+                    android:id="@+id/zonaManos"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="145dp"
+                    android:layout_marginTop="177dp"
+                    android:background="@drawable/bg_zona_vacia"
+                    android:importantForAccessibility="no"
+                    android:padding="2dp"
+                    android:scaleType="centerCrop" />
+                <ImageView
+                    android:id="@+id/zonaPies"
+                    android:layout_width="89dp"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="324dp"
+                    android:background="@drawable/bg_zona_vacia"
+                    android:importantForAccessibility="no"
+                    android:padding="2dp"
+                    android:scaleType="centerCrop" />
+            </FrameLayout>
+
+            <!-- Elegir nena o nen (sin rosa ni azul) -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_pastilla"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/btnNena"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/nena"
+                    android:textColor="@color/texto_oscuro" />
+
+                <TextView
+                    android:id="@+id/btnNen"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_boton_oscuro"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="@string/nen"
+                    android:textColor="@color/blanco" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnDesar"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/bg_boton_verde"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:paddingBottom="5dp"
+            android:text="@string/desar"
+            android:textColor="@color/blanco"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>
