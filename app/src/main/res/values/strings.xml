@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">JocPerNens</string>
+    <string name="app_name">Esprinta</string>
+
+    <!-- inicio -->
+    <string name="titulo_es">ES</string>
+    <string name="titulo_pri">PRI</string>
+    <string name="titulo_n">N</string>
+    <string name="titulo_ta">TA</string>
+    <string name="jugar">JUGAR</string>
+    <string name="professorat">PROFESSORAT</string>
+    <string name="ayuda">\?</string>
+
+    <!-- textos de los iconos -->
+    <string name="cd_ayuda">Ajuda</string>
+    <string name="cd_jugar">Jugar</string>
+    <string name="cd_professorat">Zona del professorat</string>
+    <string name="cd_primavera">Primavera</string>
+    <string name="cd_verano">Estiu</string>
+    <string name="cd_otono">Tardor</string>
+    <string name="cd_invierno">Hivern</string>
 </resources>
