@@ -21,6 +21,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".EstacionesActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".RelacionarActivity" />
+        <activity android:name=".VestirActivity" />
+        <activity android:name=".CancionesActivity" />
+        <activity android:name=".ArbolActivity" />
+        <activity android:name=".MochilaActivity" />
+        <activity android:name=".FelicitacionActivity" />
+        <activity android:name=".AccesoActivity" />
+        <activity android:name=".PanelActivity" />
     </application>
 
 </manifest>
